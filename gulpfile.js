@@ -42,7 +42,7 @@ gulp.task('copy-js', function () {
 
 gulp.task('copy', function () {
   return gulp.src(['src/worker.js', 'src/serviceworker-cache-polyfill.js', 'src/manifest.json'])
-    .pipe(gulp.dest('docs'));
+    .pipe(gulp.dest('docs/js'));
 });
 
 gulp.task('copy-index', ['sass'], function () {
