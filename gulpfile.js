@@ -63,4 +63,4 @@ gulp.task('watch', function () {
   gulp.watch('src/index.html', ['copy-index']);
 });
 
-gulp.task('build', ['lint', 'sass', 'js-min', 'copy-js', 'copy', 'copy-index', 'copy-images']);
+gulp.task('build', ['lint', 'sass', 'js-min', 'copy', 'copy-index', 'copy-images']);
