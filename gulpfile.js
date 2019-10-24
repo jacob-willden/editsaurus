@@ -8,7 +8,8 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
-    inlinesource = require('gulp-inline-source');
+    inlinesource = require('gulp-inline-source'),
+    replace = require('gulp-replace');
 
 
 gulp.task('lint', function () {
@@ -46,7 +47,14 @@ gulp.task('copy', function () {
 });
 
 gulp.task('copy-index', ['sass'], function () {
-  return gulp.src('src/index.html')
+  var cbString = new Date().getTime();
+  return gulp
+    .src('src/index.html')
+    .pipe(
+        replace(/cache_bust=\d+/g, function() {
+          return "cache_bust=" + cbString;
+        })
+    )
     .pipe(inlinesource())
     .pipe(gulp.dest('docs'));
 });

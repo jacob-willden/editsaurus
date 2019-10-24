@@ -8,9 +8,9 @@
 
   <title>Editsaurus by Tyler Walters</title>
 
-  <link rel="manifest" href="manifest.json">
-  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="manifest" href="js/manifest.json?cache_bust=1571934184920">
+  <link rel="shortcut icon" href="images/favicon.png?cache_bust=1571934184920" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png?cache_bust=1571934184920" type="image/x-icon">
 
   <style>*,:after,:before{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}.header{background-color:#f7f6f4;overflow:auto}.row{text-rendering:optimizespeed;display:flex;flex-flow:row wrap;align-content:flex-start}.content-box{padding:1em 2em}.input-column{background-color:#f2edde}.output-column{background-color:#f8f5ed}.input-column,.output-column{width:100%;display:inline-block;zoom:1;letter-spacing:normal;word-spacing:normal;vertical-align:top;text-rendering:auto}@media (min-width:48em){.input-column,.output-column{width:50%}}.check-box-options{width:100%;display:inline-block;zoom:1;letter-spacing:normal;word-spacing:normal;vertical-align:top;text-rendering:auto}@media (min-width:35.5em){.check-box-options{width:50%}}#writing-check-output{padding:0 1em}#writing-check-output p{margin:1.4em 0}.writing-check-input{min-height:200px;white-space:pre-wrap;padding:1em;background-color:#f7f6f4;border:1px solid rgba(0,0,0,.3);border-radius:4px}@media (min-width:48em){.writing-check-input{min-height:400px}}.author-copy,.definitions-list{width:100%;display:inline-block;zoom:1;letter-spacing:normal;word-spacing:normal;vertical-align:top;text-rendering:auto}@media (min-width:48em){.author-copy,.definitions-list{width:33.3333%}}.definitions-list .content-box{padding:0}.definitions-list ul{list-style:none;padding:0;margin:0}.definitions-list ul li{padding:1.3em 2em;cursor:pointer;border-right:2px solid rgba(0,0,0,.2)}.definitions-list ul li.active{border-right:none}.about-copy,.definitions-description{width:100%;display:inline-block;zoom:1;letter-spacing:normal;word-spacing:normal;vertical-align:top;text-rendering:auto}@media (min-width:48em){.about-copy,.definitions-description{width:66.6667%}}.description{display:none}.description.active{display:block}.about-copy{background-color:#f8f5ed}.author-copy{background-color:#f2edde}[data-tooltip]{position:relative;z-index:2;cursor:pointer}[data-tooltip]:after,[data-tooltip]:before{visibility:hidden;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";opacity:0;pointer-events:none}[data-tooltip]:before{position:absolute;bottom:150%;left:50%;margin-bottom:5px;margin-left:-80px;padding:7px;width:160px;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;background-color:#000;background-color:rgba(51,51,51,.9);color:#fff;content:attr(data-tooltip);text-align:center;font-size:14px;line-height:1.2}[data-tooltip]:after{position:absolute;bottom:150%;left:50%;margin-left:-5px;width:0;border-top:5px solid #000;border-top:5px solid rgba(51,51,51,.9);border-right:5px solid transparent;border-left:5px solid transparent;content:" ";font-size:0;line-height:0}[data-tooltip]:hover:after,[data-tooltip]:hover:before{visibility:visible;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";opacity:1}.h1,button,h1,html,input,select,textarea{font-family:"Merriweather",serif}body{color:#160a06;line-height:1.4;margin:0}.content-box a:link,.content-box a:visited{color:#2251af}.content-box a:hover{color:#1a3d84}.h1,h1{padding:.5em 1em;color:#565d64;text-transform:uppercase;font-weight:700;text-align:center;margin:0;font-size:1.6em}@media (min-width:48em){.h1,h1{font-size:3em}}.h2,h2{color:#222}.checkbox{padding:.3em;margin:.5em .2em;display:block}.check-box-options i{background-color:#333;border-radius:2px;padding:0 2px;line-height:19px}.adverb{background-color:#f99}.filler-words{background-color:#fc9}.redundant-words{background-color:#ff9}.passive-voice{background-color:#cf9}.to-be-verbs{background-color:#9f9}.lexical-illusions{background-color:#9fc}.nominalizations{background-color:#9ff}.misused-words{background-color:#9cf}.pronoun{background-color:#99f}.pompous-words{background-color:#c9f}.negative-words{background-color:#f9f}.ui-tooltip{background-color:#f8f5ed;padding:10px 20px;font:.8em "Merriweather",serif;box-shadow:0 0 7px #000;border:1px solid #e1d5b2}fieldset{margin:0;padding:.35em 0 .75em;border:0}</style>
 
@@ -244,11 +244,11 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-sanitize.min.js"></script>
-<script src="js/script.min.js"></script>
+<script src="js/script.min.js?cache_bust=1571934184920"></script>
 <script>
   window.addEventListener('load', function() {
       navigator.serviceWorker
-      .register('./js/worker.js')
+      .register('./js/worker.js?cache_bust=1571934184920')
       .then(function() { console.log('Service Worker Registered'); })
       .catch(function (err) {
               console.log('ServiceWorker registration failed: ', err);

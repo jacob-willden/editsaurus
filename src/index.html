@@ -8,9 +8,9 @@
 
   <title>Editsaurus by Tyler Walters</title>
 
-  <link rel="manifest" href="manifest.json">
-  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="manifest" href="js/manifest.json?cache_bust=1">
+  <link rel="shortcut icon" href="images/favicon.png?cache_bust=1" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png?cache_bust=1" type="image/x-icon">
 
   <link rel="stylesheet" href="../docs/css/style.min.css" inline>
 
@@ -244,11 +244,11 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-sanitize.min.js"></script>
-<script src="js/script.min.js"></script>
+<script src="js/script.min.js?cache_bust=1"></script>
 <script>
   window.addEventListener('load', function() {
       navigator.serviceWorker
-      .register('./js/worker.js')
+      .register('./js/worker.js?cache_bust=1')
       .then(function() { console.log('Service Worker Registered'); })
       .catch(function (err) {
               console.log('ServiceWorker registration failed: ', err);
