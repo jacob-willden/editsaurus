@@ -12,7 +12,7 @@ angular.module('editSaurus')
 
       var timer;
 
-      $scope.selectedChecks = ['adverb', 'fillerWords', 'redundantWords', 'passiveVoice', 'lexicalIllusions'];
+      $scope.selectedChecks = ['adverb', 'fillerWords', 'redundantWords', 'toBeVerbs', 'passiveVoice', 'lexicalIllusions'];
       $scope.output = '<p>Checked text copy will go here.</p>';
       $scope.input = angular.element($element[0].querySelector('#writing-check-input'));
 
