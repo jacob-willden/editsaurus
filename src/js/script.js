@@ -108,7 +108,7 @@ angular.module('editSaurus')
         toBeVerbs: {
           name: 'to-be-verbs',
           regex: /\b(am|is|are|was|were|be|been|being|have|has|had|do|does|did|shall|will|should|would|may|might|must|can|could[a-z]+'s)\b/gi,
-          title: 'Avoid &quot;to be verbs&quot; that only convey existence and not action.  See if you can you identify a stronger verb.'
+          title: 'Avoid &quot;helping verbs&quot; that only convey existence and not action.  See if you can you identify a stronger verb.'
         },
         lexicalIllusions: {
           name: 'lexical-illusions',
@@ -161,7 +161,7 @@ angular.module('editSaurus')
 
       var checkOption, addSpan;
       var toolTip, attributes = [];
-      
+
       // Loops through the selected check options to apply each one to the submitted text
       for (i = 0; i < max; i++) {
           checkOption = checkOptions[choices[i]];
@@ -187,9 +187,8 @@ angular.module('editSaurus')
         input = input.replace(/data-tooltip="([0-9]+)"/g, updateTooltip);
         input = input.replace(/class="([0-9]+)"/g, updateClass);
       }
-      
+
       return input;
     };
   }])
 ;
-
